@@ -1,17 +1,18 @@
-package org.example;
+package ru.aston.hometask;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class User {
     private int age;
     private String name;
     private List<String> data;
 
-    public User(int age, String name, List<String> tags) {
+    public User(int age, String name, List<String> data) {
         this.age = age;
         this.name = name;
-        this.data = new ArrayList<>(tags);
+        this.data = new ArrayList<>(data);
     }
 
     public User(User user) {
@@ -40,8 +41,20 @@ public class User {
         this.name = name;
     }
 
-    public void setDataList(List<String> tags) {
-        this.data = tags;
+    public void setDataList(List<String> data) {
+        this.data = data;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && Objects.equals(name, user.name) && Objects.equals(data, user.data);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, name, data);
     }
 
     @Override
