@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Petr",
+    "lastName": "Petrov",
+    "age": 20,
+    "books": [
+      {
+        "title": "Java: Programming Fundamentals for Absolute Beginners",
+        "authorName": "Nathan",
+        "authorSurname": "Clark",
+        "year": 1997,
+        "page": 116
+      },
+      {
+        "title": "Java. A Beginners Guide",
+        "authorName": "Herbert",
+        "authorSurname": "Schildt",
+        "year": 1999,
+        "page": 752
+      },
+      {
+        "title": "Java. The Complete Reference",
+        "authorName": "Herbert",
+        "authorSurname": "Schildt",
+        "year": 1999,
+        "page": 1344
+      },
+      {
+        "title": "Java. The Professionals Library, Volume 1",
+        "authorName": "Cay",
+        "authorSurname": "Horstmann",
+        "year": 2019,
+        "page": 864
+      },
+      {
+        "title": "Java. The Professionals Library, Volume 2",
+        "authorName": "Cay",
+        "authorSurname": "Horstmann",
+        "year": 2020,
+        "page": 864
+      }
+    ]
+  },
+  {
+    "name": "Ivan",
+    "lastName": "Ivanov",
+    "age": 22,
+    "books": [
+      {
+        "title": "Efficient Java programming",
+        "authorName": "Joshua",
+        "authorSurname": "Bloch",
+        "year": 2026,
+        "page": 466
+      },
+      {
+        "title": "The Philosophy of Java. Programming Language Books",
+        "authorName": "Bruce",
+        "authorSurname": "Eckel",
+        "year": 2026,
+        "page": 1168
+      },
+      {
+        "title": "Java. The Complete Reference",
+        "authorName": "Herbert",
+        "authorSurname": "Schildt",
+        "year": 1999,
+        "page": 1344
+      },
+      {
+        "title": "Java. The Professionals Library, Volume 1",
+        "authorName": "Cay",
+        "authorSurname": "Horstmann",
+        "year": 2019,
+        "page": 864
+      },
+      {
+        "title": "Java 8 in Action: Lambdas, Streams, and functional-style programming",
+        "authorName": "Raoul-gabriel",
+        "authorSurname": "Urma",
+        "year": 2026,
+        "page": 394
+      }
+    ]
+  }
+]
+
