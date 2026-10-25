@@ -1,4 +1,4 @@
-package ru.aston.hometask;
+package ru.aston.hometask.homeWork2;
 
 import java.util.List;
 import java.util.Objects;
