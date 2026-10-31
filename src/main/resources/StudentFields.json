@@ -1,0 +1,52 @@
+[
+  {
+    "group": "A-1",
+    "averageGrade": 4.5,
+    "recordBook": "12389"
+  },
+  {
+    "group": "A-1",
+    "averageGrade": 4.0,
+    "recordBook": "12005"
+  },
+  {
+    "group": "A-4",
+    "averageGrade": 3.5,
+    "recordBook": "18945"
+  },
+  {
+    "group": "A-4",
+    "averageGrade": 4.6,
+    "recordBook": "11345"
+  },
+  {
+    "group": "A-2",
+    "averageGrade": 4.1,
+    "recordBook": "15745"
+  },
+  {
+    "group": "B-1",
+    "averageGrade": 5.0,
+    "recordBook": "12995"
+  },
+  {
+    "group": "B-1",
+    "averageGrade": 4.8,
+    "recordBook": "12355"
+  },
+  {
+    "group": "B-1",
+    "averageGrade": 3.9,
+    "recordBook": "18345"
+  },
+  {
+    "group": "B-1",
+    "averageGrade": 2.5,
+    "recordBook": "12391"
+  },
+  {
+    "group": "B-1",
+    "averageGrade": 4.5,
+    "recordBook": "12275"
+  }
+]

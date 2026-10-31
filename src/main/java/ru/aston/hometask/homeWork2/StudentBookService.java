@@ -1,4 +1,4 @@
-package ru.aston.hometask;
+package ru.aston.hometask.homeWork2;
 
 import java.util.Comparator;
 import java.util.List;

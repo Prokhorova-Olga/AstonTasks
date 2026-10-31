@@ -1,4 +1,4 @@
-package ru.aston.hometask;
+package ru.aston.hometask.homeWork2;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
