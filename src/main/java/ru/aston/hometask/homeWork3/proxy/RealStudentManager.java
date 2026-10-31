@@ -17,7 +17,11 @@ public class RealStudentManager implements StudentManager {
 
     @Override
     public void deleteStudent(String recordBook) {
-        students.removeIf(student -> student.getRecordBook().equals(recordBook));
-        System.out.println("Студент с номером зачетной книжки: " + recordBook + " успешно удален");
+        boolean isDeleted = students.removeIf(student -> student.getRecordBook().equals(recordBook));
+        if (isDeleted) {
+            System.out.println("Студент с номером зачетной книжки: " + recordBook + " успешно удален");
+        } else {
+            System.out.println("Студент с номером зачетной книжки: " + recordBook + " не найден");
+        }
     }
 }

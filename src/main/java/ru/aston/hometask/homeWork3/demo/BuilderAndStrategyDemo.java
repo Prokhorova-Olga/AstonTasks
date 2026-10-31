@@ -1,7 +1,6 @@
-package ru.aston.hometask.homeWork3.tests;
+package ru.aston.hometask.homeWork3.demo;
 
 import ru.aston.hometask.homeWork3.builder.Student;
-import ru.aston.hometask.homeWork3.builder.StudentBuilder;
 import ru.aston.hometask.homeWork3.strategy.InsertionSort;
 import ru.aston.hometask.homeWork3.strategy.MergeSort;
 import ru.aston.hometask.homeWork3.strategy.StudentSorter;
@@ -10,15 +9,15 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class BuilderAndStrategyTest {
+public class BuilderAndStrategyDemo {
 
     public static void main(String[] args) {
 
         System.out.println("Проверка паттерна Строитель");
 
-        Student studentOne = new StudentBuilder().setGroup("А-1").setAverageGrade(3.8).setRecordBook("56789").build();
-        Student studentTwo = new StudentBuilder().setGroup("Б-1").setAverageGrade(3.0).setRecordBook("76589").build();
-        Student studentThree = new StudentBuilder().setGroup("В-1").setAverageGrade(5.0).setRecordBook("12389").build();
+        Student studentOne = Student.builder().group("А-1").averageGrade(3.8).recordBook("56789").build();
+        Student studentTwo = Student.builder().group("Б-1").averageGrade(3.0).recordBook("76589").build();
+        Student studentThree = Student.builder().group("В-1").averageGrade(5.0).recordBook("12389").build();
 
         List<Student> students = new ArrayList<>();
         students.add(studentOne);

@@ -1,11 +1,11 @@
-package ru.aston.hometask.homeWork3.tests;
+package ru.aston.hometask.homeWork3.demo;
 
 import ru.aston.hometask.homeWork3.decorator.BudgetStudentDecorator;
 import ru.aston.hometask.homeWork3.decorator.PaidStudentDecorator;
 import ru.aston.hometask.homeWork3.decorator.SimpleStudent;
 import ru.aston.hometask.homeWork3.decorator.Student;
 
-public class DecoratorTest {
+public class DecoratorDemo {
 
     public static void main(String[] args) {
 

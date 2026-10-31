@@ -7,10 +7,14 @@ public class Student {
     private final double averageGrade;
     private final String recordBook;
 
-    Student(String group, double averageGrade, String recordBook) {
+    private Student(String group, double averageGrade, String recordBook) {
         this.group = group;
         this.averageGrade = averageGrade;
         this.recordBook = recordBook;
+    }
+
+    public static StudentBuilder builder() {
+        return new StudentBuilder();
     }
 
     public String getGroup() {
@@ -44,5 +48,30 @@ public class Student {
                 ", averageGrade=" + averageGrade +
                 ", recordBook='" + recordBook + '\'' +
                 '}';
+    }
+
+    public static class StudentBuilder {
+        private String group;
+        private double averageGrade;
+        private String recordBook;
+
+        public StudentBuilder group(String group) {
+            this.group = group;
+            return this;
+        }
+
+        public StudentBuilder averageGrade(double averageGrade) {
+            this.averageGrade = averageGrade;
+            return this;
+        }
+
+        public StudentBuilder recordBook(String recordBook) {
+            this.recordBook = recordBook;
+            return this;
+        }
+
+        public Student build() {
+            return new Student(group, averageGrade, recordBook);
+        }
     }
 }

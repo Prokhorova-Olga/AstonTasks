@@ -1,5 +1,6 @@
-package ru.aston.hometask.homeWork3.tests;
+package ru.aston.hometask.homeWork3.demo;
 
+import ru.aston.hometask.homeWork3.adapter.JsonFileReader;
 import ru.aston.hometask.homeWork3.adapter.JsonStudentAdapter;
 import ru.aston.hometask.homeWork3.adapter.StudentProvider;
 import ru.aston.hometask.homeWork3.builder.Student;
@@ -7,11 +8,12 @@ import ru.aston.hometask.homeWork3.builder.Student;
 import java.io.IOException;
 import java.util.List;
 
-public class AdapterTest {
+public class AdapterDemo {
 
     public static void main(String[] args) {
 
-        StudentProvider studentProvider = new JsonStudentAdapter();
+        JsonFileReader jsonFileReader = new JsonFileReader();
+        StudentProvider studentProvider = new JsonStudentAdapter(jsonFileReader);
 
         try {
             List<Student> students = studentProvider.read();

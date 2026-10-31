@@ -4,7 +4,7 @@ import ru.aston.hometask.homeWork3.builder.Student;
 
 public abstract class AbstractStudentValidator implements StudentValidator {
 
-    protected StudentValidator next;
+    private StudentValidator next;
 
     @Override
     public boolean validate(Student student) {

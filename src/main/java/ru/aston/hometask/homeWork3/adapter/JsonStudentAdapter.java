@@ -1,7 +1,6 @@
 package ru.aston.hometask.homeWork3.adapter;
 
 import ru.aston.hometask.homeWork3.builder.Student;
-import ru.aston.hometask.homeWork3.builder.StudentBuilder;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +9,11 @@ import java.util.Map;
 
 public class JsonStudentAdapter implements StudentProvider {
 
-    private final JsonFileReader fileReader = new JsonFileReader();
+    private final JsonFileReader fileReader;
+
+    public JsonStudentAdapter(JsonFileReader fileReader) {
+        this.fileReader = fileReader;
+    }
 
     @Override
     public List<Student> read() throws IOException {
@@ -28,10 +31,10 @@ public class JsonStudentAdapter implements StudentProvider {
             double averageGrade = ((Number) studentMap.get("averageGrade")).doubleValue();
             String recordBook = (String) studentMap.get("recordBook");
 
-            Student student = new StudentBuilder()
-                    .setGroup(group)
-                    .setAverageGrade(averageGrade)
-                    .setRecordBook(recordBook)
+            Student student = Student.builder()
+                    .group(group)
+                    .averageGrade(averageGrade)
+                    .recordBook(recordBook)
                     .build();
             students.add(student);
         }
